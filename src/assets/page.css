@@ -1,0 +1,248 @@
+* {
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --magenta: #720060;
+  --navy: #002772;
+  --blue: #d6e6ff;
+  --pink: #fde2ff;
+  --black: #1e1e1e;
+  --dark-gray: #3f3f3f;
+  --gray: #dcdcdc;
+  --white: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.product-unavailable-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-unavailable-container > .overlay {
+  position: fixed;
+  left: 10%;
+  top: 10%;
+}
+
+.product-unavailable-container > .content {
+  text-align: center;
+  font-size: 16px;
+  z-index: 2;
+  position: fixed;
+  top: 40%;
+}
+
+.product-unavailable-container .btn-available-next {
+  margin: 20px auto;
+  border: 2px solid #000;
+  border-radius: 4px;
+  width: 60%;
+  height: 36px;
+  color: #000;
+  font-weight: 600;
+  font-size: large;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.patern {
+  width: 100%;
+  margin-top: -120px;
+}
+
+.contain-product {
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  filter: drop-shadow(2px 4px 21px rgba(0, 0, 0, 0.2));
+
+  background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  font-size: 0.9em;
+  line-height: 21px;
+  float: right;
+  width: 69%;
+  flex-direction: column;
+}
+
+.content .title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.content .sub-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 16px;
+  color: var(--dark-gray);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.rating {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  /* border: 1px solid #ddd; */
+}
+
+.filled {
+  background-color: blue;
+}
+
+.content .desc {
+  width: 100%;
+  margin-top: 24px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  color: var(--black);
+}
+
+.content .price {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.content .wrapper2 {
+  padding-top: 16px;
+  border-top: 1px solid var(--gray);
+  width: 64%;
+  position: fixed;
+  margin-top: 320px;
+}
+
+.category {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3f3f3f;
+}
+
+.rate {
+  margin-left: 200px;
+}
+
+.img-product img {
+  max-width: 100%;
+  max-height: 70%;
+}
+
+.img-product {
+  position: fixed;
+  top: 0;
+  width: 290px;
+  height: 500px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.btn-buy {
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  width: 250px;
+  height: 42px;
+  padding: 0.5em 3em;
+  margin: 0 1em 0.3em 0;
+}
+
+.btn-next {
+  font-weight: bold;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: inline-block;
+  width: 250px;
+  height: 42px;
+  padding: 0.5em 3em;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.bg-blue {
+  background: linear-gradient(180deg, var(--blue) 65%, var(--white) 50%);
+}
+
+.bg-pink {
+  background: linear-gradient(180deg, var(--pink) 65%, var(--white) 50%);
+}
+
+.bg-gray {
+  background: linear-gradient(180deg, var(--gray) 65%, var(--white) 50%);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.bg-magenta {
+  background-color: var(--magenta);
+}
+
+.border-navy {
+  border: 2px solid var(--navy);
+}
+
+.border-magenta {
+  border: 2px solid var(--magenta);
+}
+
+.font-navy {
+  color: var(--navy);
+}
+
+.font-magenta {
+  color: var(--magenta);
+}
